@@ -1,10 +1,7 @@
 'use strict';
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 	require('load-grunt-tasks')(grunt);
-
-	grunt.loadNpmTasks('grunt-env');
-	grunt.loadNpmTasks('grunt-mocha-istanbul');
 
 	grunt.initConfig({
 		'env': {
@@ -14,12 +11,18 @@ module.exports = function(grunt) {
 
 		},
 
+		'eslint': {
+			'options': {
+				'config': '.eslintrc.json',
+				'format': 'junit',
+				'outputFile': 'buildresults/eslint-orig.xml'
+			},
+			'target': ['.']
+		},
+
 		'exec': {
 			'clean': {
 				'command': 'rm -rf buildresults docs'
-			},
-			'lint': {
-				'command': 'yarn lint'
 			},
 			'docs': {
 				'command': 'yarn docs'
@@ -53,9 +56,51 @@ module.exports = function(grunt) {
 					'reportFormats': ['cobertura']
 				}
 			}
-		}
+		},
+
+		'xmlstoke': {
+			'deleteESLintBugs': {
+				'options': {
+					'actions': [{
+						'type': 'D',
+						'xpath': '//failure[contains(@message, \'node_modules\')]/ancestor::testsuite'
+					}]
+				},
+				'files': {
+					'buildresults/lint.xml': 'buildresults/eslint-orig.xml'
+				}
+			},
+			'deleteEmptyTestcases': {
+				'options': {
+					'actions': [{
+						'type': 'D',
+						'xpath': '//testcase[not(text())]'
+					}]
+				},
+				'files': {
+					'buildresults/eslint-no-empty-testcases.xml': 'buildresults/eslint-no-bugs.xml'
+				}
+			},
+			'deleteEmptyTestsuites': {
+				'options': {
+					'actions': [{
+						'type': 'D',
+						'xpath': '//testsuite[not(text())]'
+					}]
+				},
+				'files': {
+					'buildresults/lint.xml': 'buildresults/eslint-no-empty-testcases.xml'
+				}
+			}
+		},
+
+		'clean': ['buildresults/eslint-orig.xml', 'buildresults/eslint-no-bugs.xml', 'buildresults/eslint-no-empty-testcases.xml']
 	});
 
-	grunt.registerTask('default', ['exec:clean', 'env', 'exec:lint', 'mochaTest', 'mocha_istanbul:coverage', 'exec:docs']);
-};
+	grunt.loadNpmTasks('grunt-eslint');
+	grunt.loadNpmTasks('grunt-env');
+	grunt.loadNpmTasks('grunt-mocha-istanbul');
+	grunt.loadNpmTasks('grunt-xmlstoke');
 
+	grunt.registerTask('default', ['exec:clean', 'env', 'eslint', 'xmlstoke:deleteESLintBugs', 'clean', 'mochaTest', 'mocha_istanbul:coverage', 'exec:docs']);
+};

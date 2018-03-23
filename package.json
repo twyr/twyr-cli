@@ -2,11 +2,66 @@
 	"name": "twyr-cli",
 	"description": "Generate services, middlewares, components, templates, and whole new servers confirming to the Twy'r specifications",
 	"version": "0.7.1",
-	"author": "Vish Desai",
+	"homepage": "https://twyr,github.io/twyr-cli",
+	"keywords": [
+		"twy'r",
+		"cli"
+	],
+	"main": "src/index.js",
 	"bin": {
 		"twyr-cli": "./bin/run"
 	},
-	"bugs": "https://github.com/twyr/twyr-cli/issues",
+	"engines": {
+		"node": ">=8.0.0"
+	},
+	"files": [
+		".oclif.manifest.json",
+		"/bin",
+		"/src"
+	],
+	"oclif": {
+		"commands": "./src/commands",
+		"bin": "twyr-cli",
+		"plugins": [
+			"@oclif/plugin-help"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/twyr/twyr-cli"
+	},
+	"author": {
+		"name": "Vish Desai",
+		"email": "shadyvd@hotmail.com",
+		"url": "https://twyr.github.io"
+	},
+	"maintainers": [{
+		"name": "Vish Desai",
+		"email": "shadyvd@hotmail.com",
+		"url": "https://twyr.github.io"
+	}],
+	"contributors": [{
+		"name": "Vish Desai",
+		"email": "shadyvd@hotmail.com",
+		"url": "https://twyr.github.io"
+	}],
+	"bugs": {
+		"url": "https://github.com/twyr/twyr-cli/issues",
+		"email": "shadyvd@hotmail.com"
+	},
+	"scripts": {
+		"clean": "rm -f .oclif.manifest.json && rm -rf docs",
+		"lint": "eslint .",
+		"docs": "jsdoc --configure ./jsdoc.json",
+
+		"prepublishOnly": "oclif-dev manifest && oclif-dev readme",
+		"postpublish": "yarn run clean",
+
+		"test": "mocha --forbid-only \"test/**/*.test.js\"",
+
+		"version": "oclif-dev readme && git add README.md",
+		"preversion": "yarn run clean"
+	},
 	"dependencies": {
 		"@oclif/command": "^1.4.2",
 		"@oclif/config": "^1.3.59",
@@ -34,40 +89,6 @@
 		"mocha-junit-reporter": "*",
 		"mocha-prepare": "*"
 	},
-	"engines": {
-		"node": ">=8.0.0"
-	},
-	"files": [
-		".oclif.manifest.json",
-		"/bin",
-		"/src"
-	],
-	"homepage": "https://github.com/twyr/twyr-cli",
-	"keywords": [
-		"twy'r",
-		"cli"
-	],
-	"license": "MIT",
-	"main": "src/index.js",
-	"oclif": {
-		"commands": "./src/commands",
-		"bin": "twyr-cli",
-		"plugins": [
-			"@oclif/plugin-help"
-		]
-	},
-	"repository": "twyr/twyr-cli",
-	"scripts": {
-		"clean": "rm -f .oclif.manifest.json",
-		"lint": "eslint .",
-		"docs": "jsdoc --configure ./jsdoc.json",
-
-		"prepublishOnly": "oclif-dev manifest && oclif-dev readme",
-		"postpublish": "yarn run clean",
-
-		"test": "mocha --forbid-only \"test/**/*.test.js\"",
-
-		"version": "oclif-dev readme && git add README.md",
-		"preversion": "yarn run clean"
-	}
+	"license": "MITNFA",
+	"readmeFilename": "README.md"
 }

@@ -1,0 +1,4 @@
+--require test/setup_mocks.js
+--recursive
+--reporter spec
+--timeout 5000

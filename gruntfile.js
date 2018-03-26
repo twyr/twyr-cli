@@ -67,14 +67,14 @@ module.exports = function (grunt) {
 					}]
 				},
 				'files': {
-					'buildresults/lint.xml': 'buildresults/eslint-orig.xml'
+					'buildresults/eslint-no-bugs.xml': 'buildresults/eslint-orig.xml'
 				}
 			},
 			'deleteEmptyTestcases': {
 				'options': {
 					'actions': [{
 						'type': 'D',
-						'xpath': '//testcase[not(text())]'
+						'xpath': '//testcase[not(node())]'
 					}]
 				},
 				'files': {
@@ -85,16 +85,27 @@ module.exports = function (grunt) {
 				'options': {
 					'actions': [{
 						'type': 'D',
-						'xpath': '//testsuite[not(text())]'
+						'xpath': '//testsuite[not(descendant::testcase)]'
 					}]
 				},
 				'files': {
-					'buildresults/lint.xml': 'buildresults/eslint-no-empty-testcases.xml'
+					'buildresults/eslint-no-empty-testsuites.xml': 'buildresults/eslint-no-empty-testcases.xml'
+				}
+			},
+			'prettify': {
+				'options': {
+					'actions': [{
+						'type': 'U',
+						'xpath': '//text()'
+					}]
+				},
+				'files': {
+					'buildresults/lint.xml': 'buildresults/eslint-no-empty-testsuites.xml'
 				}
 			}
 		},
 
-		'clean': ['buildresults/eslint-orig.xml', 'buildresults/eslint-no-bugs.xml', 'buildresults/eslint-no-empty-testcases.xml']
+		'clean': ['buildresults/eslint-orig.xml', 'buildresults/eslint-no-bugs.xml', 'buildresults/eslint-no-empty-testcases.xml', 'buildresults/eslint-no-empty-testsuites.xml', 'buildresults/coverage.raw.json']
 	});
 
 	grunt.loadNpmTasks('grunt-eslint');
@@ -102,5 +113,5 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-mocha-istanbul');
 	grunt.loadNpmTasks('grunt-xmlstoke');
 
-	grunt.registerTask('default', ['exec:clean', 'env', 'eslint', 'xmlstoke:deleteESLintBugs', 'clean', 'mochaTest', 'mocha_istanbul:coverage', 'exec:docs']);
+	grunt.registerTask('default', ['exec:clean', 'env', 'eslint', 'xmlstoke:deleteESLintBugs', 'xmlstoke:deleteEmptyTestcases', 'xmlstoke:deleteEmptyTestsuites', 'xmlstoke:prettify', 'mochaTest', 'mocha_istanbul:coverage', 'exec:docs', 'clean']);
 };

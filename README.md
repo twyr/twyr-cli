@@ -4,13 +4,8 @@ twyr-cli
 Generate services, middlewares, components, templates, and whole new servers confirming to the Twy&#39;r specifications
 
 [![Version](https://img.shields.io/npm/v/twyr-cli.svg)](https://npmjs.org/package/twyr-cli)
-[![CircleCI](https://circleci.com/gh/code/twyr-cli/tree/master.svg?style=shield)](https://circleci.com/gh/code/twyr-cli/tree/master)
-[![Appveyor CI](https://ci.appveyor.com/api/projects/status/github/code/twyr-cli?branch=master&svg=true)](https://ci.appveyor.com/project/code/twyr-cli/branch/master)
-[![Codecov](https://codecov.io/gh/code/twyr-cli/branch/master/graph/badge.svg)](https://codecov.io/gh/code/twyr-cli)
-[![Greenkeeper](https://badges.greenkeeper.io/code/twyr-cli.svg)](https://greenkeeper.io/)
-[![Known Vulnerabilities](https://snyk.io/test/github/code/twyr-cli/badge.svg)](https://snyk.io/test/github/code/twyr-cli)
 [![Downloads/week](https://img.shields.io/npm/dw/twyr-cli.svg)](https://npmjs.org/package/twyr-cli)
-[![License](https://img.shields.io/npm/l/twyr-cli.svg)](https://github.com/code/twyr-cli/blob/master/package.json)
+[![License](https://img.shields.io/npm/l/twyr-cli.svg)](https://github.com/twyr/twyr-cli/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)

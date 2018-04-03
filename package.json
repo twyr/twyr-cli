@@ -15,7 +15,9 @@
 		"node": ">=8.0.0"
 	},
 	"files": [
+		"LICENSE",
 		".oclif.manifest.json",
+		"README.md",
 		"/bin",
 		"/src"
 	],

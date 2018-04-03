@@ -5,9 +5,7 @@
 	"source": {
 		"include": ["./", "./README.md"],
 		"exclude": [
-			"config",
-			"knex_migrations",
-			"logs",
+			"docs",
 			"node_modules",
 			"test"
 		],
@@ -25,6 +23,7 @@
 		"package": "./package.json",
 		"encoding": "utf8",
 		"recurse": true,
+		"recurseDepth": 4000,
 		"verbose": true
 	},
 	"templates": {

@@ -4,6 +4,8 @@ module.exports = function (grunt) {
 	require('load-grunt-tasks')(grunt);
 
 	grunt.initConfig({
+		'pkg': grunt.file.readJSON('package.json'),
+
 		'env': {
 			'mochaTest': {
 				'NODE_ENV': 'test'
@@ -26,6 +28,9 @@ module.exports = function (grunt) {
 			},
 			'docs': {
 				'command': 'yarn docs'
+			},
+			'rename_docs': {
+				'command': 'mv ./<%= pkg.version %> ./docs'
 			}
 		},
 
@@ -120,5 +125,5 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-mocha-istanbul');
 	grunt.loadNpmTasks('grunt-xmlstoke');
 
-	grunt.registerTask('default', ['exec:clean', 'env', 'eslint', 'xmlstoke:deleteESLintBugs', 'xmlstoke:deleteEmptyTestcases', 'xmlstoke:deleteEmptyTestsuites', 'xmlstoke:prettify', 'mochaTest', 'mocha_istanbul:coverage', 'exec:docs', 'clean', 'jsbeautifier']);
+	grunt.registerTask('default', ['exec:clean', 'env', 'eslint', 'xmlstoke:deleteESLintBugs', 'xmlstoke:deleteEmptyTestcases', 'xmlstoke:deleteEmptyTestsuites', 'xmlstoke:prettify', 'mochaTest', 'mocha_istanbul:coverage', 'exec:docs', 'exec:rename_docs', 'clean', 'jsbeautifier']);
 };

@@ -17,8 +17,8 @@
 		"plugins/summarize"
 	],
 	"opts": {
-		"template": "./node_modules/jsdoc-template",
-		"destination": "./docs/",
+		"template": "./node_modules/docdash2",
+		"destination": "./../",
 		"readme": "./README.md",
 		"package": "./package.json",
 		"encoding": "utf8",
@@ -34,5 +34,26 @@
 		"default": {
 			"outputSourceFiles": true
 		}
+	},
+	"docdash": {
+		"static": true,
+		"sort": true,
+		"openGraph": {
+			"title": "PlantWorks Web Application Server",
+			"type": "documentation",
+			"image": "./tenant_assets/www/img/logo.png",
+			"site_name": "PlantWorks Web Application Server",
+			"url": "https://plantworks.github.io/webapp-server"
+		},
+		"meta": {
+			"title": "PlantWorks Web Application Server",
+			"description": "PlantWorks Web Application Server",
+			"keyword": "plant.works, plantworks"
+		},
+		"search": true,
+		"collapse": true,
+		"typedefs": false,
+		"removeQuotes": "none",
+		"scripts": []
 	}
 }

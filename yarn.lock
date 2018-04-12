@@ -18,7 +18,7 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@oclif/command@^1.4.13", "@oclif/command@^1.4.2", "@oclif/command@^1.4.4", "@oclif/command@^1.4.7":
+"@oclif/command@^1.4.13", "@oclif/command@^1.4.2", "@oclif/command@^1.4.4":
   version "1.4.13"
   resolved "https://registry.yarnpkg.com/@oclif/command/-/command-1.4.13.tgz#2ed3c42142307d20337ec04eabd1be410dfa2a5e"
   dependencies:
@@ -27,18 +27,18 @@
     debug "^3.1.0"
     semver "^5.5.0"
 
-"@oclif/config@^1.3.59", "@oclif/config@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.6.0.tgz#0d9a034a3364d0ff24368e039599f89e4c00f775"
+"@oclif/config@^1.3.59", "@oclif/config@^1.6.1":
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.6.3.tgz#8c28cec59a9ff9486aab580de2d6635d80ce44f4"
   dependencies:
     debug "^3.1.0"
 
 "@oclif/dev-cli@^1.3.1":
-  version "1.10.2"
-  resolved "https://registry.yarnpkg.com/@oclif/dev-cli/-/dev-cli-1.10.2.tgz#ab44773cd5f92b03ddb4babec786bc34fc8cfc31"
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@oclif/dev-cli/-/dev-cli-1.13.0.tgz#b46bf7e8cf247a1aa2acdd46be38819a2fd4febd"
   dependencies:
     "@oclif/command" "^1.4.13"
-    "@oclif/config" "^1.6.0"
+    "@oclif/config" "^1.6.1"
     "@oclif/errors" "^1.0.4"
     "@oclif/plugin-help" "^1.2.3"
     cli-ux "^3.3.28"
@@ -72,10 +72,10 @@
     chalk "^2.3.2"
 
 "@oclif/plugin-help@^1.1.6", "@oclif/plugin-help@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-1.2.3.tgz#f85e88744ec271d38949fda5c51185ad7f99e77d"
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-1.2.4.tgz#1b4349f7d570445ad5cfe4f925bfd832d4552aa2"
   dependencies:
-    "@oclif/command" "^1.4.7"
+    "@oclif/command" "^1.4.13"
     chalk "^2.3.2"
     indent-string "^3.2.0"
     lodash.template "^4.4.0"
@@ -520,8 +520,8 @@ cli-cursor@^2.1.0:
     restore-cursor "^2.0.0"
 
 cli-ux@^3.3.28:
-  version "3.3.28"
-  resolved "https://registry.yarnpkg.com/cli-ux/-/cli-ux-3.3.28.tgz#9d516d389a9bbca272e8a195f7cac6c61d0e69fa"
+  version "3.3.30"
+  resolved "https://registry.yarnpkg.com/cli-ux/-/cli-ux-3.3.30.tgz#525e65bda07a04e913673dfd614519373053d003"
   dependencies:
     "@oclif/linewrap" "^1.0.0"
     "@oclif/screen" "^1.0.2"

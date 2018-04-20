@@ -18,7 +18,7 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@oclif/command@^1.4.13", "@oclif/command@^1.4.2", "@oclif/command@^1.4.4":
+"@oclif/command@^1.4.13", "@oclif/command@^1.4.2":
   version "1.4.13"
   resolved "https://registry.yarnpkg.com/@oclif/command/-/command-1.4.13.tgz#2ed3c42142307d20337ec04eabd1be410dfa2a5e"
   dependencies:
@@ -27,21 +27,21 @@
     debug "^3.1.0"
     semver "^5.5.0"
 
-"@oclif/config@^1.3.59", "@oclif/config@^1.6.1":
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.6.3.tgz#8c28cec59a9ff9486aab580de2d6635d80ce44f4"
+"@oclif/config@^1.3.59", "@oclif/config@^1.6.4":
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/@oclif/config/-/config-1.6.4.tgz#4bcb51fa40646794031437d7904f0fbb56e5c072"
   dependencies:
     debug "^3.1.0"
 
 "@oclif/dev-cli@^1.3.1":
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/@oclif/dev-cli/-/dev-cli-1.13.0.tgz#b46bf7e8cf247a1aa2acdd46be38819a2fd4febd"
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/@oclif/dev-cli/-/dev-cli-1.13.1.tgz#3a40b2c5890c86413ef3a2fcf232178cff7e897c"
   dependencies:
     "@oclif/command" "^1.4.13"
-    "@oclif/config" "^1.6.1"
+    "@oclif/config" "^1.6.4"
     "@oclif/errors" "^1.0.4"
-    "@oclif/plugin-help" "^1.2.3"
-    cli-ux "^3.3.28"
+    "@oclif/plugin-help" "^1.2.4"
+    cli-ux "^3.3.30"
     debug "^3.1.0"
     fs-extra "^5.0.0"
     lodash "^4.17.5"
@@ -65,13 +65,13 @@
   resolved "https://registry.yarnpkg.com/@oclif/linewrap/-/linewrap-1.0.0.tgz#aedcb64b479d4db7be24196384897b5000901d91"
 
 "@oclif/parser@^3.3.2":
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/@oclif/parser/-/parser-3.3.2.tgz#81af56d4f97beae376abb59e461005489abd9e19"
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/@oclif/parser/-/parser-3.3.3.tgz#bfde499b836178eee2b6b29ccb7fb3f95851d3c6"
   dependencies:
     "@oclif/linewrap" "^1.0.0"
-    chalk "^2.3.2"
+    chalk "^2.4.0"
 
-"@oclif/plugin-help@^1.1.6", "@oclif/plugin-help@^1.2.3":
+"@oclif/plugin-help@^1.1.6", "@oclif/plugin-help@^1.2.4":
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-1.2.4.tgz#1b4349f7d570445ad5cfe4f925bfd832d4552aa2"
   dependencies:
@@ -84,11 +84,11 @@
     wrap-ansi "^3.0.1"
 
 "@oclif/plugin-not-found@*":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-not-found/-/plugin-not-found-1.0.5.tgz#45ed23895cb19564ca14df9b75c570670ad31a44"
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-not-found/-/plugin-not-found-1.0.6.tgz#471bf3410a3d656d8d7fa482ca9afc4f909be981"
   dependencies:
     "@heroku-cli/color" "^1.1.3"
-    "@oclif/command" "^1.4.4"
+    "@oclif/command" "^1.4.13"
     string-similarity "^1.2.0"
 
 "@oclif/screen@^1.0.2":
@@ -96,10 +96,10 @@
   resolved "https://registry.yarnpkg.com/@oclif/screen/-/screen-1.0.2.tgz#c9d7c84b0ea60ecec8dd7a9b22c012ba9967aed8"
 
 "@oclif/test@^1.0.1":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@oclif/test/-/test-1.0.4.tgz#07c28c18f959a6b860b5781465884773f893fafb"
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@oclif/test/-/test-1.0.5.tgz#2b8e8384148a75c6cc6ef20df54cfa55cde15d4e"
   dependencies:
-    fancy-test "^1.0.3"
+    fancy-test "^1.0.5"
 
 abbrev@1:
   version "1.1.1"
@@ -466,9 +466,9 @@ chalk@^1.1.3, chalk@~1.1.1:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
-chalk@^2.0.0, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.3.2.tgz#250dc96b07491bfd601e648d66ddf5f60c7a5c65"
+chalk@^2.0.0, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.3.2, chalk@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.0.tgz#a060a297a6b57e15b61ca63ce84995daa0fe6e52"
   dependencies:
     ansi-styles "^3.2.1"
     escape-string-regexp "^1.0.5"
@@ -519,15 +519,15 @@ cli-cursor@^2.1.0:
   dependencies:
     restore-cursor "^2.0.0"
 
-cli-ux@^3.3.28:
-  version "3.3.30"
-  resolved "https://registry.yarnpkg.com/cli-ux/-/cli-ux-3.3.30.tgz#525e65bda07a04e913673dfd614519373053d003"
+cli-ux@^3.3.30:
+  version "3.3.31"
+  resolved "https://registry.yarnpkg.com/cli-ux/-/cli-ux-3.3.31.tgz#e4f2a380df00ebf298189b83a77ae92cdfc7355f"
   dependencies:
     "@oclif/linewrap" "^1.0.0"
     "@oclif/screen" "^1.0.2"
     ansi-styles "^3.2.1"
     cardinal "^1.0.0"
-    chalk "^2.3.2"
+    chalk "^2.4.0"
     clean-stack "^1.3.0"
     extract-stack "^1.0.0"
     fs-extra "^5.0.0"
@@ -536,7 +536,7 @@ cli-ux@^3.3.28:
     password-prompt "^1.0.4"
     semver "^5.5.0"
     strip-ansi "^4.0.0"
-    supports-color "^5.3.0"
+    supports-color "^5.4.0"
 
 cli-width@^2.0.0:
   version "2.2.0"
@@ -1033,12 +1033,12 @@ extract-stack@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/extract-stack/-/extract-stack-1.0.0.tgz#b97acaf9441eea2332529624b732fc5a1c8165fa"
 
-fancy-test@^1.0.3:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/fancy-test/-/fancy-test-1.0.4.tgz#fa689cfc98abec74a0b2f4386d92c58f1ef20f11"
+fancy-test@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/fancy-test/-/fancy-test-1.0.5.tgz#323970de576f7dc0938402c3a731ee4d59896a11"
   dependencies:
     lodash "^4.17.5"
-    stdout-stderr "^0.1.8"
+    stdout-stderr "^0.1.9"
 
 fast-deep-equal@^1.0.0:
   version "1.1.0"
@@ -2112,8 +2112,8 @@ mocha-prepare@*:
   resolved "https://registry.yarnpkg.com/mocha-prepare/-/mocha-prepare-0.1.0.tgz#5513227681222e4349481ee4e462472f31c6bb82"
 
 mocha@*:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/mocha/-/mocha-5.1.0.tgz#5ff11cc39c0bb65330ac6c41f9086634e3e3f686"
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/mocha/-/mocha-5.1.1.tgz#b774c75609dac05eb48f4d9ba1d827b97fde8a7b"
   dependencies:
     browser-stdout "1.3.1"
     commander "2.11.0"
@@ -2767,7 +2767,7 @@ static-extend@^0.1.1:
     define-property "^0.2.5"
     object-copy "^0.1.0"
 
-stdout-stderr@^0.1.8:
+stdout-stderr@^0.1.9:
   version "0.1.9"
   resolved "https://registry.yarnpkg.com/stdout-stderr/-/stdout-stderr-0.1.9.tgz#9b48ee04eff955ee07776e27125d5524d9d02f57"
   dependencies:
@@ -2845,9 +2845,9 @@ supports-color@^3.1.2:
   dependencies:
     has-flag "^1.0.0"
 
-supports-color@^5.1.0, supports-color@^5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.3.0.tgz#5b24ac15db80fa927cf5227a4a33fd3c4c7676c0"
+supports-color@^5.1.0, supports-color@^5.3.0, supports-color@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.4.0.tgz#1c6b337402c2137605efe19f10fec390f6faab54"
   dependencies:
     has-flag "^3.0.0"
 

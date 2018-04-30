@@ -76,7 +76,7 @@
 		"globby": "^8.0.1"
 	},
 	"devDependencies": {
-		"@oclif/dev-cli": "^1.13.8",
+		"@oclif/dev-cli": "^1.13.11",
 		"@oclif/test": "^1.0.1",
 		"chai": "*",
 		"docdash2": "*",

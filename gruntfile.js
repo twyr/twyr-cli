@@ -27,7 +27,7 @@ module.exports = function (grunt) {
 				'command': 'rm -rf buildresults docs'
 			},
 			'docs': {
-				'command': 'yarn docs'
+				'command': 'npm run-script docs'
 			},
 			'rename_docs': {
 				'command': 'mv ./<%= pkg.version %> ./docs'

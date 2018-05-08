@@ -62,10 +62,10 @@
 		"docs": "./node_modules/.bin/jsdoc --configure ./jsdoc.json --verbose",
 		"lint": "./node_modules/.bin/eslint .",
 		"prepublishOnly": "oclif-dev manifest && oclif-dev readme",
-		"postpublish": "yarn run clean",
+		"postpublish": "npm run-script clean",
 		"test": "./node_modules/.bin/mocha --forbid-only \"test/**/*.test.js\"",
 		"version": "oclif-dev readme && git add README.md",
-		"preversion": "yarn run clean"
+		"preversion": "npm run-script clean"
 	},
 	"dependencies": {
 		"@oclif/command": "^1.4.21",
@@ -76,7 +76,7 @@
 		"globby": "^8.0.1"
 	},
 	"devDependencies": {
-		"@oclif/dev-cli": "^1.13.18",
+		"@oclif/dev-cli": "^1.13.19",
 		"@oclif/test": "^1.0.6",
 		"chai": "*",
 		"docdash2": "*",
@@ -95,7 +95,7 @@
 		"grunt-xmlstoke": "*",
 		"istanbul": "^1.1.0-alpha.1",
 		"jsdoc": "^3.0.0",
-		"load-grunt-tasks": "*",
+		"load-grunt-tasks": "^4.0.0",
 		"mocha": "*",
 		"mocha-junit-reporter": "*",
 		"mocha-prepare": "*"

@@ -83,7 +83,7 @@
 		"eslint": "*",
 		"eslint-config-oclif": "^1.5.0",
 		"eslint-junit": "*",
-		"eslint-plugin-jsdoc": "^3.7.0",
+		"eslint-plugin-jsdoc": "^3.7.1",
 		"grunt": "*",
 		"grunt-contrib-clean": "*",
 		"grunt-env": "*",

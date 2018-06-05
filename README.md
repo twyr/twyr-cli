@@ -1,7 +1,7 @@
 twyr-cli
 ========
 
-Generate services, middlewares, components, templates, and whole new servers confirming to the Twy&#39;r specifications
+Generate services, middlewares, components, templates, tenant-specific scaffolding, and whole new servers confirming to the Twy&#39;r specifications
 
 [![Version](https://img.shields.io/npm/v/twyr-cli.svg)](https://npmjs.org/package/twyr-cli)
 [![Downloads/week](https://img.shields.io/npm/dw/twyr-cli.svg)](https://npmjs.org/package/twyr-cli)

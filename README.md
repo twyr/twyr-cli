@@ -5,8 +5,9 @@ Generate services, middlewares, components, templates, and whole new servers con
 
 [![Version](https://img.shields.io/npm/v/twyr-cli.svg)](https://npmjs.org/package/twyr-cli)
 [![Downloads/week](https://img.shields.io/npm/dw/twyr-cli.svg)](https://npmjs.org/package/twyr-cli)
-[![License](https://img.shields.io/npm/l/twyr-cli.svg)](https://github.com/twyr/twyr-cli/blob/master/package.json) [![Greenkeeper badge](https://badges.greenkeeper.io/twyr/twyr-cli.svg)](https://greenkeeper.io/)
-[![CircleCI](https://circleci.com/gh/twyr/twyr-cli.svg?style=svg)](https://circleci.com/gh/twyr/twyr-cli)
+[![License](https://img.shields.io/npm/l/twyr-cli.svg)](https://github.com/twyr/twyr-cli/blob/master/package.json)
+[![Greenkeeper badge](https://badges.greenkeeper.io/twyr/twyr-cli.svg)](https://greenkeeper.io/)
+[![CircleCI](https://circleci.com/gh/twyr/twyr-cli.svg?style=shield)](https://circleci.com/gh/twyr/twyr-cli)
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)

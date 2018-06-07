@@ -26,14 +26,28 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
+      # Install new dependencies
       - run: npm i
 
+      # Update all dependencies
+      - run: npm up
+
+      # Cache dependencies
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run tests!
+      # run build - clean, test, coverage, and docs
       - run: npm run build
+
+      # store build results
+      - store_test_results:
+          path: ./buildresults
+
+      # store generated docs
+      - store_artifacts:
+          path: ./docs
+          destination: docs
 
 

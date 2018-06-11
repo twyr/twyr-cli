@@ -68,7 +68,7 @@
 		"preversion": "npm run-script clean"
 	},
 	"dependencies": {
-		"@oclif/command": "^1.4.32",
+		"@oclif/command": "^1.4.33",
 		"@oclif/config": "^1.6.27",
 		"@oclif/errors": "^1.1.2",
 		"@oclif/plugin-help": "^2.0.5",
@@ -87,7 +87,7 @@
 		"grunt": "^1.0.3",
 		"grunt-contrib-clean": "*",
 		"grunt-env": "*",
-		"grunt-eslint": "*",
+		"grunt-eslint": "^20.2.0",
 		"grunt-exec": "*",
 		"grunt-jsbeautifier": "*",
 		"grunt-mocha-istanbul": "*",

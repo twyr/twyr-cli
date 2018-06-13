@@ -72,7 +72,7 @@
 		"@oclif/config": "^1.6.28",
 		"@oclif/errors": "^1.1.2",
 		"@oclif/plugin-help": "^2.0.5",
-		"@oclif/plugin-not-found": "^1.0.9",
+		"@oclif/plugin-not-found": "^1.1.0",
 		"globby": "^8.0.1"
 	},
 	"devDependencies": {

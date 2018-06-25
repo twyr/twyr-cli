@@ -81,7 +81,7 @@
 		"chai": "*",
 		"docdash2": "*",
 		"eslint": "^5.0.0",
-		"eslint-config-oclif": "^1.5.1",
+		"eslint-config-oclif": "^2.0.0",
 		"eslint-junit": "*",
 		"eslint-plugin-jsdoc": "^3.7.1",
 		"grunt": "^1.0.3",

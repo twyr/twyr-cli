@@ -68,7 +68,7 @@
 		"preversion": "npm run-script clean"
 	},
 	"dependencies": {
-		"@oclif/command": "^1.4.33",
+		"@oclif/command": "^1.4.34",
 		"@oclif/config": "^1.6.33",
 		"@oclif/errors": "^1.1.2",
 		"@oclif/plugin-help": "^2.0.5",
@@ -76,11 +76,11 @@
 		"globby": "^8.0.1"
 	},
 	"devDependencies": {
-		"@oclif/dev-cli": "^1.15.3",
+		"@oclif/dev-cli": "^1.15.4",
 		"@oclif/test": "^1.1.0",
 		"chai": "*",
 		"docdash2": "*",
-		"eslint": "^5.0.0",
+		"eslint": "^5.0.1",
 		"eslint-config-oclif": "^2.0.0",
 		"eslint-junit": "*",
 		"eslint-plugin-jsdoc": "^3.7.1",

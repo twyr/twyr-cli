@@ -68,7 +68,7 @@
 		"preversion": "npm run-script clean"
 	},
 	"dependencies": {
-		"@oclif/command": "^1.4.34",
+		"@oclif/command": "^1.4.35",
 		"@oclif/config": "^1.6.33",
 		"@oclif/errors": "^1.1.2",
 		"@oclif/plugin-help": "^2.0.5",

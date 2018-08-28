@@ -69,7 +69,7 @@
 	},
 	"dependencies": {
 		"@oclif/command": "^1.5.0",
-		"@oclif/config": "^1.7.0",
+		"@oclif/config": "^1.7.2",
 		"@oclif/errors": "^1.2.0",
 		"@oclif/plugin-help": "^2.1.0",
 		"@oclif/plugin-not-found": "^1.2.0",

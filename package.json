@@ -68,19 +68,19 @@
 		"preversion": "npm run-script clean"
 	},
 	"dependencies": {
-		"@oclif/command": "^1.5.8",
+		"@oclif/command": "^1.5.10",
 		"@oclif/config": "1.12.8",
 		"@oclif/errors": "^1.2.2",
-		"@oclif/plugin-help": "^2.1.4",
+		"@oclif/plugin-help": "^2.1.6",
 		"@oclif/plugin-not-found": "^1.2.2",
-		"globby": "^8.0.1"
+		"globby": "^8.0.2"
 	},
 	"devDependencies": {
-		"@oclif/dev-cli": "^1.21.0",
-		"@oclif/test": "^1.2.2",
+		"@oclif/dev-cli": "^1.21.2",
+		"@oclif/test": "^1.2.4",
 		"chai": "^4.2.0",
 		"docdash2": "*",
-		"eslint": "^5.12.0",
+		"eslint": "^5.14.1",
 		"eslint-config-oclif": "^3.1.0",
 		"eslint-junit": "*",
 		"eslint-plugin-jsdoc": "^4.0.0",
@@ -96,7 +96,7 @@
 		"istanbul": "^1.1.0-alpha.1",
 		"jsdoc": "^3.0.0",
 		"load-grunt-tasks": "^4.0.0",
-		"mocha": "^5.2.0",
+		"mocha": "^6.0.0",
 		"mocha-junit-reporter": "^1.18.0",
 		"mocha-prepare": "*"
 	},

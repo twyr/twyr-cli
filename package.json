@@ -80,7 +80,7 @@
 		"@oclif/test": "^1.2.4",
 		"chai": "^4.2.0",
 		"docdash2": "*",
-		"eslint": "^5.14.1",
+		"eslint": "^6.5.0",
 		"eslint-config-oclif": "^3.1.0",
 		"eslint-junit": "*",
 		"eslint-plugin-jsdoc": "^4.0.0",
